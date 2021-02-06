@@ -419,6 +419,11 @@
     padding: 34px 160px 0 160px;
 }
 
+.pricing__box--premium .pricing__details {
+    padding-right: 146px;
+    padding-left: 146px;
+}
+
 .pricing__type {
     font-size: 20px;
     color: #13253B;
@@ -451,7 +456,7 @@
 }
 
 .pricing__box--premium .pricing__limited {
-    margin-bottom: 50px;
+    margin-bottom: 52px;
 }
 
 .pricing__limited {
@@ -527,4 +532,161 @@
 
 .btn:hover {
     padding: 16px 65px;
+}
+
+/********************CONTACT********************/
+
+.contact {
+    display: flex;
+    justify-content: center;
+    gap: 114px;
+    margin-top: 179px;
+    margin-bottom: 59px;
+}
+
+.contact__column {
+    max-width: 440px;
+
+}
+
+.contact__title {
+    font-size: 49px;
+    line-height: 57px;
+    color: var(--color5);
+    font-family: var(--font1);
+    padding: 0 0 22px 0;
+}
+
+.contact__text {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--color5);
+    font-family: var(--font2);
+    font-weight: normal;
+    padding-bottom: 40px;
+}
+
+.contact__items {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    gap: 20px;
+}
+
+.contact__item {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--color6);
+    font-weight: 600;
+    font-family: var(--font2);
+    text-decoration: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__label {
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 3.28px;
+    color: var(--color1);
+    font-family: var(--font2);
+    font-weight: bold;
+}
+
+.form__input {
+    width: 100%;
+    font-size: 16px;
+    font-family: var(--font2);
+    border: none;
+    border-bottom: 1px solid #95989A;
+    margin-bottom: 42px;
+    margin-top: 20px;
+}
+
+.checkbox__details {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 40px;
+}
+
+.checkbox__input {
+    display: none;
+}
+
+.checkbox__input:checked + .checkbox__span::after {
+    content: "";
+    width: 12px;
+    height: 11px;
+    display: inline-block;
+    background-image: url("../assets/Checkmark.svg");
+}
+
+.checkbox__span {
+    min-width: 24px;
+    height: 24px;
+    border: 1px solid #95989A;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox__text {
+    font-size: 12px;
+    line-height: 17px;
+    color: #707070;
+    font-weight: normal;
+    font-family: var(--font2);
+}
+
+.btn--secondary {
+    align-self: flex-end;
+    color: var(--color8);
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: bold;
+    font-family: var(--font2);
+    padding: 20px 97px;
+    border-radius: 35px;
+    background: var(--color1);
+    box-shadow: 5px 10px 14px #07ACE629;
+    border: none;
+}
+
+/********************FOOTER********************/
+
+.footer {
+    box-shadow: 0 -5px 40px #00000029;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__details {
+    margin-top: 21px;
+    margin-bottom: 17px;
+}
+
+.logo--primary {
+    font-size: 26px;
+    line-height: 30px;
+}
+
+.footer__copyright {
+    color: var(--color6);
+    padding-top: 6.5px;
+    font-family: var(--font2);
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.footer__icons {
+    display: flex;
+    gap: 20px;
 }
